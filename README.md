@@ -6,7 +6,7 @@
 * 연습문제
 ***
 ```
-code를 작성하는 곳.
+SELECT * FROM employees;
 ```
 ***
 ### 링크
