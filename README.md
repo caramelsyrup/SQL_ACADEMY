@@ -1,19 +1,20 @@
 # SQL 기술문서 작성
-### SQL 수업의 내용을 저장
-#### * List 리스트
-* SQL 문법
+## List
+1. SELECT문 기본.
+2. SELECT문 조건설정과 정렬
+3. 문자형함수
+4. 숫자형함수
+5. 날짜형함수
+6. 변환형함수
+7. 일반형함수
+8. 그룹함수
+9. 조인
+10. SCOTT계정 연습문제
+
+***
+#### 내용
+* 기본 문법 설명
 * 예제
 * 연습문제
 ***
-```
-SELECT * FROM employees;
-```
-***
-### 링크
-[Google](http://google.com)
-***
-### 이미지
-![Alt text](https://unsplash.com/photos/GL6J_sFYHLw)
-
-![Alt text](img/sss.png)
 
