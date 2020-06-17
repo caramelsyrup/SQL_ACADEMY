@@ -17,4 +17,4 @@
 * 예제
 * 연습문제
 ***
-# ![Alt text](img/sss.png =40x40)
+# ![Alt text](img/sss.png)
