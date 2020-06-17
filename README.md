@@ -1,4 +1,4 @@
-# ![Alt text](img/sss.png =40x40) SQL 기술문서 작성
+# SQL 기술문서 작성
 ## List
 1. SELECT문 기본.
 2. SELECT문 조건설정과 정렬
@@ -17,4 +17,4 @@
 * 예제
 * 연습문제
 ***
-
+# ![Alt text](img/sss.png =40x40)
