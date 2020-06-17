@@ -66,7 +66,7 @@ SELECT deptno,ename,sal FROM emp ORDER BY deptno DESC , ename , sal DESC;
 -- 33.
 SELECT ename,sal, ROUND((sal*0.13),0) AS "BONUS",deptno FROM emp WHERE deptno IN(10);
 -- 34.
-SELECT ename,sal,NVL(comm,0), sal+NVL(comm,0) FROM emp ORDER BY 4 DESC;
+SELECT ename,sal,NVL(comm,0), sal+NVL(comm,0) FROM emp ORDER BY 4 DESC; -- COALESE(sal+comm,sal) 가능.
 -- 35.
 SELECT ename,sal,TO_CHAR(ROUND((sal*0.15),1),'$999,999,999.0')AS "회비"
 FROM emp WHERE sal BETWEEN 1500 AND 3000;
@@ -76,11 +76,11 @@ JOIN dept d ON e.deptno=d.deptno
 GROUP BY d.dname HAVING COUNT(*)>5;
 -- 37.
 SELECT job, SUM(sal) FROM emp 
-GROUP BY job HAVING SUM(sal)>5000 AND job <> 'SALESMAN' -- !=
+GROUP BY job HAVING SUM(sal)>5000 AND job <> 'SALESMAN'                 -- !=
 ORDER BY SUM(sal) DESC;
 -- 38.
 SELECT e.empno,e.ename, e.sal, s.grade FROM emp e 
-JOIN salgrade s on e.sal >= s.losal AND e.sal <= s.hisal;
+JOIN salgrade s on e.sal >= s.losal AND e.sal <= s.hisal;               -- BETWEEN s.losal AND s.hisaㅣ 로 표현 가능.
 -- 39.
 SELECT deptno, COUNT(empno)AS"사원수", COUNT(comm)AS"커미션받은사원수" FROM emp 
 GROUP BY deptno;
@@ -91,6 +91,7 @@ DECODE(deptno, 10, '총무부',
                30, '영업부'
 ) AS "부서명"
 FROM emp;
+
 SELECT ename,deptno,
 CASE deptno WHEN 10 THEN '총무부'
              WHEN 20 THEN '개발부'
