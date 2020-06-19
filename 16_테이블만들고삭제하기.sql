@@ -1,0 +1,141 @@
+-- 테이블 만들기 CREATE
+CREATE TABLE EX_DATE(   -- 테이블 이름
+    EX_ID NUMBER(2),     -- 열이름, 데이터타입지정.
+    START_DATE DATE DEFAULT SYSDATE);       -- DATE 타입, 디폴트는 입력 안될시 뒤의 값으로.
+
+INSERT INTO ex_date(ex_id) VALUES (1);
+INSERT INTO ex_date(ex_id) VALUES (2);
+INSERT INTO ex_date(ex_id) VALUES (3);
+commit;
+SELECT * FROM ex_date;
+
+-- 테이블 삭제하기 DROP TABLE
+DROP TABLE COMP;
+DROP TABLE COP_EMP;
+
+--예제.
+CREATE TABLE sample_product(
+    product_id number,
+    product_name varchar2(20),
+    menu_date date );
+DESC sample_product;
+INSERT INTO sample_product VALUES (1,'X570','2019/06/18');
+INSERT INTO sample_product VALUES (2,'B550','2020/06/18');
+SELECT * FROM sample_product;
+DROP TABLE sample_product;
+commit;
+
+-- 테이블의 제약조건
+CREATE TABLE EMP (
+    ENO NUMBER(3) CONSTRAINT EMP_ENO_pk PRIMARY KEY,    -- ENO열은 숫자3자리만 가능,제약조건은 기본키로 설정.
+    EMP_NAME VARCHAR2(20) );                              -- 제약조건을 걸지 않음.
+DESC EMP;    
+INSERT INTO EMP VALUES (1,'YANG');  --PK 제약조건은 중복안되고, 반드시 기입해야한다.
+SELECT * FROM EMP;
+DROP TABLE EMP;
+
+CREATE TABLE EMP (
+    ENO NUMBER(3),
+    EMP_NAME VARCHAR2(20),
+    CONSTRAINT EMP_ENO_pk PRIMARY KEY(ENO)      -- 제약조건을 거는 다른 방식.
+);
+
+-- 제약조건의 이름없이 만들기
+CREATE TABLE EMP1 (
+    ENO NUMBER(3) PRIMARY KEY,                  -- 제약조건 이름을 만들지 않으면, 컴퓨터에서 자동으로 생성.
+    EMP_NAME VARCHAR2(20)
+);
+INSERT INTO EMP1 VALUES (1,'PARK');
+DROP TABLE EMP1;
+
+-- NOT NULL / UK 유니크
+CREATE TABLE EMP1 (
+    ENO NUMBER(3),
+    EMP_NAME VARCHAR2(20) CONSTRAINT EMP1_EMP_NAME_NN NOT NULL,
+    EMAIL VARCHAR2(40) CONSTRAINT EMP1_EMAIL_UK UNIQUE
+);
+INSERT INTO EMP1 VALUES (1,NULL,'HONG@NAVER.COM');  -- cannot insert NULL into ("HR"."EMP1"."EMP_NAME")오류
+-- UNIQUE는 동일 값이 입력될 수 없다.
+INSERT INTO EMP1 VALUES (1,'HONG','HONG@NAVER.COM');
+INSERT INTO EMP1 VALUES (2,'KIM','HONG@NAVER.COM'); --unique constraint (HR.EMP1_EMAIL_UK) 오류
+
+CREATE TABLE EMP2 (
+    ENO NUMBER(2),
+    EMP_NAME VARCHAR2(20) CONSTRAINT EMP2_EMP_NAME_NN NOT NULL,
+    SAL NUMBER(10),
+    CONSTRAINT EMP2_SAL_CHECK CHECK(SAL > 1000)
+);
+INSERT INTO EMP2 VALUES (1,'HONG',999); -- check constraint (HR.EMP2_SAL_CHECK) 오류
+INSERT INTO EMP2 VALUES (1,'HONG',1999);    -- 정상 실행.
+
+DROP TABLE EMP;
+CREATE TABLE EMP(
+    ENO NUMBER(4) PRIMARY KEY,
+    EMNAME VARCHAR2(20) NOT NULL,
+    GNO VARCHAR2(13) UNIQUE CHECK(LENGTH(GNO)>=8),  -- 제약조건을 두개를 걸어놓음.
+    GENDER VARCHAR2(5) CHECK(GENDER IN('WOMAN' , 'MAN')) 
+);
+DESC EMP;
+INSERT INTO EMP VALUES(1,'KIM','12345678','MAN');
+INSERT INTO EMP VALUES(2,'KANG','123456789','WOMAN');
+INSERT INTO EMP VALUES(1,'YANG','123456789','HUMAN');       -- 입력이 안댐.
+
+-- 예제.
+CREATE TABLE members(
+    memeber_id number(2) PRIMARY KEY,
+    first_name VARCHAR2(50) NOT NULL,
+    last_name VARCHAR2(50) NOT NULL,
+    gender VARCHAR2(5) CHECK(gender IN('Man' , 'Woman')),
+    birth_day DATE DEFAULT SYSDATE,
+    email VARCHAR2(200) UNIQUE NOT NULL
+);
+DESC MEMBERS;
+INSERT INTO MEMBERS(memeber_id, first_name,last_name,gender,email) VALUES (1,'KIM','MOON','Man','KKK@NAVER.COM');
+INSERT INTO MEMBERS VALUES (2,'DO','MOON','Woman','1980/08/18','jjj@NAVER.COM');
+SELECT * FROM members;
+
+-- 외래키 (FK)
+DROP TABLE DEPT;
+CREATE TABLE DEPT(
+    DNO NUMBER(4),
+    DNAME VARCHAR2(20),
+    CONSTRAINT DEPT_DNO_PK PRIMARY KEY(DNO) -- 기본키
+);
+DROP TABLE EMP;
+CREATE TABLE EMP(
+    ENO NUMBER(4),
+    EMP_NAME VARCHAR2(20),
+    SAL NUMBER(10),
+    DNO NUMBER(4),
+    CONSTRAINT EMP_ENO_PK PRIMARY KEY(ENO),      -- 기본키
+    CONSTRAINT EMP_DNO_FK FOREIGN KEY(DNO)       -- 외래키, 외래키는 생성시 
+--    REFERENCES DEPT(DNO) ON DELETE CASCADE      -- 참조 열도 같이 적어야한다., 참조열 삭제시 자동삭제.
+    REFERENCES DEPT(DNO) ON DELETE SET NULL
+);
+INSERT INTO DEPT VALUES (10,'TEST1');
+INSERT INTO DEPT VALUES (20,'TEST2');
+INSERT INTO DEPT VALUES (30,'TEST3');
+INSERT INTO DEPT VALUES (40,'TEST4');
+INSERT INTO DEPT VALUES (50,'TEST5');
+SELECT*FROM dept;
+INSERT INTO EMP VALUES (1010,'KIM',200,10);
+INSERT INTO EMP VALUES (1020,'KANG',180,20);
+INSERT INTO EMP VALUES (1030,'OH',220,30);
+INSERT INTO EMP VALUES (1040,'JUNG',250,40);
+INSERT INTO EMP VALUES (1050,'KING',300,50);
+SELECT*FROM EMP;
+INSERT INTO EMP VALUES (1050,'KING',300,70);    
+-- unique constraint 에러 발생. DEPT에는 50까지만 있는데, 70을 넣어서 입력불가능.
+INSERT INTO EMP VALUES (1060,'KIASG',300,NULL);
+-- 외래키는 NULL은 가능.
+
+-- 삭제시
+DELETE FROM DEPT WHERE DNO=20;
+-- integrity constraint (HR.EMP_DNO_FK) 외래키 오류 발생. EMP테이블에서 해당 키를 외래키로 참조하고 있음.
+-- 1. 참조행 삭제시 자동 삭제
+-- ON DELETE CASCADE, 외래키를 만들때, ON DELETE CASCADE 를 붙여 줌.
+-- 삭제시, 기본키-외래키 관계가 되는 행들은 같이 삭제.
+-- 2. 참조행 삭제시 자동 널 값
+-- ON DELETE SET NULL, 외래키를 만들때, ON DELETE SET NULL를 붙여 줌.
+DELETE FROM DEPT WHERE DNO=30;
+-- 삭제시, 자동으로 NULL값이 생성.
