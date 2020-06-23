@@ -90,11 +90,10 @@ select employee_id, first_name, job_id, salary,department_id from employees wher
 IN(select manager_id from employees where department_id = 20)
 and department_id != 20;
 
-
 -- 예제2)
 select employee_id, last_name, job_id, salary  
 from employees 
-where salary < ANY(select salary from employees where job_id='ST_MAN') ;
+where salary < ANY(select salary from employees where job_id='ST_MAN');
 
 --★ 예제3)
 select employee_id, last_name, job_id, salary
@@ -102,7 +101,7 @@ from employees
 where salary < all(select salary from employees where job_id='IT_PROG');
 -- IT프로그 중 가장 낮은 급여보다도 낮은 급여를 받는 직원 조회 (ALL이니까)
 -- sal 이 4200미만인 것만 조회됨
-
+select salary from employees where job_id='IT_PROG';
 
 -- 다중열 서브쿼리 
 -- 브루스와 직종과 매니저가 같은 직원을 조회하지만, BRUCE 자신은 제외
