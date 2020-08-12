@@ -7,3 +7,7 @@ commit;
 select * from jstlmember;
 
 select * from address;
+
+select * from member;
+commit;
+delete from member where userid = 'abc';
