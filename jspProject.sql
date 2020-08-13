@@ -16,7 +16,7 @@ CREATE SEQUENCE member_seq NOCACHE;
 SELECT * FROM member;
 SELECT * FROM member WHERE userid = 'admin';
 
-INSERT INTO member VALUES (member_seq.nextval,'admin','1111','부산시','000-0000-0000','admin@admin.com',1);
+INSERT INTO member VALUES (member_seq.nextval,'admin','1111','부산시','000-0000-0000','admin@admin.com',1,'000-000','관리자');
 
 CREATE TABLE address(
 zipcode VARCHAR2(20),
@@ -32,3 +32,8 @@ arttitle VARCHAR2(50) PRIMARY KEY,
 artmaker VARCHAR2(40),
 artdescription VARCHAR2(100)
 );
+CREATE SEQUENCE artworks_seq NOCACHE;
+ALTER TABLE artworks ADD (filename VARCHAR(20));
+SELECT * FROM artworks;
+
+insert into artworks values(artworks_seq.nextval,'김정희 초상화','이한철','조선후기 초상화','kimjeonghee.jpg');
