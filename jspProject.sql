@@ -9,7 +9,7 @@ CREATE TABLE member(
 
 ALTER TABLE member ADD (userzipcode VARCHAR(20));
 ALTER TABLE member ADD (username VARCHAR(20));
-COMMIT;    
+COMMIT;   
 
 CREATE SEQUENCE member_seq NOCACHE;
 
@@ -37,3 +37,26 @@ ALTER TABLE artworks ADD (filename VARCHAR(20));
 SELECT * FROM artworks;
 
 insert into artworks values(artworks_seq.nextval,'김정희 초상화','이한철','조선후기 초상화','kimjeonghee.jpg');
+
+CREATE TABLE events(
+eventnum NUMBER PRIMARY KEY,
+eventname VARCHAR2(50),
+eventhost VARCHAR2(50),
+eventsche DATE DEFAULT SYSDATE,
+eventlocation VARCHAR2(50),
+eventdescip VARCHAR2(70)
+);
+CREATE SEQUENCE events_seq NOCACHE;
+ALTER TABLE events ADD (filename VARCHAR(20));
+SELECT * FROM events;
+
+CREATE TABLE reservation (
+renum NUMBER,
+userid VARCHAR2(50),
+eventname VARCHAR2(50),
+eventlocation VARCHAR2(50),
+eventsche DATE DEFAULT SYSDATE,
+quantity number
+);
+CREATE SEQUENCE reservation_seq NOCACHE;
+SELECT * FROM reservation;
