@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RESERVATION" directorySegmentName="seg_0" id="BE6F3C72-E24E-82CF-F272-F9707F236816">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<schemaObject>8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CB3720B7-1173-9995-B44A-66A244930043</segment>
+<tableSpace>086AE45C-D76F-2076-B7A0-F1D291AEA40C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EVENTSCHE" id="1B83EA3F-DC70-3CAB-BE99-0F1352E55CF0">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="QUANTITY" id="371CFC2E-71FF-E81C-661D-5361018C95EA">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVENTLOCATION" id="7265264B-120C-0283-899E-728D1F2680B3">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RENUM" id="7B3B4EB9-FC57-1768-FBBB-7664BF4D5012">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVENTNAME" id="B3056773-E10B-DD1D-1146-361F597C0782">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="D2FA3181-2ED7-5C56-6E22-D42E4A898C53">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

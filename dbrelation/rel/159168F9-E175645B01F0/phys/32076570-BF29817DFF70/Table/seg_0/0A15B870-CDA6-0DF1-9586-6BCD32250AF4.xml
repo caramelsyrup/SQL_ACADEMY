@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ADDRESS" directorySegmentName="seg_0" id="0A15B870-CDA6-0DF1-9586-6BCD32250AF4">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:40 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<schemaObject>8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CB3720B7-1173-9995-B44A-66A244930043</segment>
+<tableSpace>086AE45C-D76F-2076-B7A0-F1D291AEA40C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ZIPCODE" id="01CCABFE-6F68-13C7-77E4-C6C7673F8D22">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:40 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DONG" id="2D10529C-CED1-6B3A-DFE2-3CBE6B11A63C">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:40 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GUGUN" id="38B4BB88-D86F-88A0-A79A-2090AD27DD59">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:40 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIDO" id="9EB6F003-A91B-DB66-6190-ED0F3F8A3D33">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:40 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BUNJI" id="F651E30D-A2BC-6566-9C54-BFC843FF2C99">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:40 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev11g>

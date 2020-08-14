@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9ACFA18-B9F0-1EAF-744B-DC47AEE2018E" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="ARTWORKS">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>ARTWORKS</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARTID" id="C53ABD03-6488-DA9B-325F-75B52E77A0D8">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>ARTWORKS</sourceObjSchema>
+<sourceObjName>ARTID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARTTITLE" id="01A5ABBE-006A-C640-7B22-6D5FD7B4F721">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>ARTWORKS</sourceObjSchema>
+<sourceObjName>ARTTITLE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARTMAKER" id="B9225165-38BE-A4D5-4A05-620275110296">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>ARTWORKS</sourceObjSchema>
+<sourceObjName>ARTMAKER</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARTDESCRIPTION" id="49619438-95E7-52D4-5132-CE5ED19D4D1C">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>ARTWORKS</sourceObjSchema>
+<sourceObjName>ARTDESCRIPTION</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILENAME" id="287A11EA-6E4E-5516-C46B-5B5AEC374C49">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>ARTWORKS</sourceObjSchema>
+<sourceObjName>FILENAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0A4FF64-CD61-D5AB-9900-B4E5415C1B37" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="ARTWORKS_PK">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>SYS_C007154</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:20 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01A5ABBE-006A-C640-7B22-6D5FD7B4F721"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

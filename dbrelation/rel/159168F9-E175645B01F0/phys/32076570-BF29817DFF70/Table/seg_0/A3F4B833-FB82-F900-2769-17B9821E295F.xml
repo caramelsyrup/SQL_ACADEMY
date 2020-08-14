@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MEMBER" directorySegmentName="seg_0" id="A3F4B833-FB82-F900-2769-17B9821E295F">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<schemaObject>8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CB3720B7-1173-9995-B44A-66A244930043</segment>
+<tableSpace>086AE45C-D76F-2076-B7A0-F1D291AEA40C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USERPWD" id="05D1D4E8-54DC-1588-56A9-C4D18ED2FF64">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERZIPCODE" id="150EB8CB-9C89-AD9F-8A5D-16B19F9DE8CF">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USEREMAIL" id="2062D9E4-9023-E961-2CA8-DBE4881ECC55">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERADDR" id="292391F8-4646-2806-FD69-54D30B3C08BA">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERTEL" id="3183CC88-2D37-6860-728F-9086BC51B84F">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NUM" id="4B7FCF3F-1CCF-2A64-D546-3A6B41D5D191">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USERNAME" id="7AD10FCB-492F-BD64-2E99-76E0EB26E376">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADMIN" id="A08B89D5-6694-EFA9-4630-9165DD1F399D">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="USERID" id="EC0C16F6-8721-7DDF-F3B8-1C7242DD0ABA">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MEMBER_PK" id="7FCC2A2E-25B9-3BC6-2086-735303BBAE42">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<schemaObject>8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36</schemaObject>
+<segment>05DAEEA1-30CD-2170-03C2-847C1F6A3E88</segment>
+<tableSpace>086AE45C-D76F-2076-B7A0-F1D291AEA40C</tableSpace>
+<indexSegment>05DAEEA1-30CD-2170-03C2-847C1F6A3E88</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

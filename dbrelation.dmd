@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="dbrelation" id="0B8679AC-0D30-0FC2-157C-76B22F24F509" version="3.5">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:03:00 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>0B8679AC-0D30-0FC2-157C-76B22F24F509</designId>
+</OSDM_Design>

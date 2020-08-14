@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F749A5DD-28FA-75BB-942A-39E41713364C" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="EVENTS">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EVENTS</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EVENTNUM" id="8C47C5E1-8FD0-D5F3-226C-AED86449D92F">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>EVENTNUM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTNAME" id="D8B0E20E-BDC5-0EE8-DCDF-DB61F7568F8F">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>EVENTNAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTHOST" id="07B6B72F-8440-A009-6DB7-50AC5635D7D5">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>EVENTHOST</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTSCHE" id="94265DB7-1A41-6CC3-A900-6F323C2D1909">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>EVENTSCHE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTLOCATION" id="6830F00A-9793-8001-B947-699DBD2C09E8">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>EVENTLOCATION</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTDESCIP" id="AF1D7026-D256-0690-CF25-1676A426DBF2">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>EVENTDESCIP</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70 BYTE</dataTypeSize>
+<ownDataTypeParameters>70 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILENAME" id="F1C0C5C4-641B-E62D-0DE9-175CA51472C2">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>EVENTS</sourceObjSchema>
+<sourceObjName>FILENAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A1A23E9-76CE-A0B5-CCF9-0DE60EE016E7" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="EVENTS_PK">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>SYS_C007155</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C47C5E1-8FD0-D5F3-226C-AED86449D92F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A3F4B833-FB82-F900-2769-17B9821E295F" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="MEMBER">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>MEMBER</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NUM" id="4B7FCF3F-1CCF-2A64-D546-3A6B41D5D191">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>NUM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERID" id="EC0C16F6-8721-7DDF-F3B8-1C7242DD0ABA">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERPWD" id="05D1D4E8-54DC-1588-56A9-C4D18ED2FF64">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USERPWD</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERADDR" id="292391F8-4646-2806-FD69-54D30B3C08BA">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USERADDR</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERTEL" id="3183CC88-2D37-6860-728F-9086BC51B84F">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USERTEL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USEREMAIL" id="2062D9E4-9023-E961-2CA8-DBE4881ECC55">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USEREMAIL</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADMIN" id="A08B89D5-6694-EFA9-4630-9165DD1F399D">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>ADMIN</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERZIPCODE" id="150EB8CB-9C89-AD9F-8A5D-16B19F9DE8CF">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USERZIPCODE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERNAME" id="7AD10FCB-492F-BD64-2E99-76E0EB26E376">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>USERNAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FCC2A2E-25B9-3BC6-2086-735303BBAE42" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="MEMBER_PK">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>SYS_C007152</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:05:57 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC0C16F6-8721-7DDF-F3B8-1C7242DD0ABA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

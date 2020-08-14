@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EVENTS" directorySegmentName="seg_0" id="F749A5DD-28FA-75BB-942A-39E41713364C">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<schemaObject>8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>CB3720B7-1173-9995-B44A-66A244930043</segment>
+<tableSpace>086AE45C-D76F-2076-B7A0-F1D291AEA40C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EVENTHOST" id="07B6B72F-8440-A009-6DB7-50AC5635D7D5">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVENTLOCATION" id="6830F00A-9793-8001-B947-699DBD2C09E8">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVENTNUM" id="8C47C5E1-8FD0-D5F3-226C-AED86449D92F">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVENTSCHE" id="94265DB7-1A41-6CC3-A900-6F323C2D1909">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="EVENTDESCIP" id="AF1D7026-D256-0690-CF25-1676A426DBF2">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVENTNAME" id="D8B0E20E-BDC5-0EE8-DCDF-DB61F7568F8F">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILENAME" id="F1C0C5C4-641B-E62D-0DE9-175CA51472C2">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EVENTS_PK" id="3A1A23E9-76CE-A0B5-CCF9-0DE60EE016E7">
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:06:56 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<schemaObject>8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36</schemaObject>
+<segment>05DAEEA1-30CD-2170-03C2-847C1F6A3E88</segment>
+<tableSpace>086AE45C-D76F-2076-B7A0-F1D291AEA40C</tableSpace>
+<indexSegment>05DAEEA1-30CD-2170-03C2-847C1F6A3E88</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

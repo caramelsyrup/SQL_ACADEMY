@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE6F3C72-E24E-82CF-F272-F9707F236816" schemaObject="8D8AA27A-3FB3-CAA3-9FC6-2A4CA9AFAF36" name="RESERVATION">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>RESERVATION</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RENUM" id="7B3B4EB9-FC57-1768-FBBB-7664BF4D5012">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RENUM</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERID" id="D2FA3181-2ED7-5C56-6E22-D42E4A898C53">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>USERID</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTNAME" id="B3056773-E10B-DD1D-1146-361F597C0782">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>EVENTNAME</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTLOCATION" id="7265264B-120C-0283-899E-728D1F2680B3">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>EVENTLOCATION</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTSCHE" id="1B83EA3F-DC70-3CAB-BE99-0F1352E55CF0">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>EVENTSCHE</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="371CFC2E-71FF-E81C-661D-5361018C95EA">
+<sourceConnName>HR+%EC%97%B0%EC%8A%B5%EA%B3%84%EC%A0%95</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>QUANTITY</sourceObjName>
+<createdBy>admin</createdBy>
+<createdTime>2020-08-14 06:48:59 UTC</createdTime>
+<ownerDesignName>dbrelation</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>
